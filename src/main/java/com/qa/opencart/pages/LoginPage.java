@@ -23,6 +23,8 @@ public class LoginPage {
 	private By searchbutton = By.cssSelector(".btn.btn-default.btn-lg");
 	private By Register = By.linkText("Register");
 	private By acclogoutmessage = By.cssSelector("div#content h1");
+	
+	private By testingLocaterGit= By.cssSelector("div#Rakesh.singh");
 
 	/**
 	 * @param driver
