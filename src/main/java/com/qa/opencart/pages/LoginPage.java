@@ -23,8 +23,6 @@ public class LoginPage {
 	private By searchbutton = By.cssSelector(".btn.btn-default.btn-lg");
 	private By Register = By.linkText("Register");
 	private By acclogoutmessage = By.cssSelector("div#content h1");
-	
-	private By testingLocaterGit= By.cssSelector("div#Rakesh.singh");
 
 	/**
 	 * @param driver
@@ -76,10 +74,11 @@ public class LoginPage {
 	public boolean RegisterLinkisExit() {
 		return eleUtil.waitForElementVisible(Register, constant.DEFAULT_ELEMENT_TIME_OUT).isDisplayed();
 	}
+
 	@Step("login with userName{0} and password{1}")
-	
+
 	public AccountPage doLogin(String username, String pwd) {
-		System.out.println(username + ": " +pwd);
+		System.out.println(username + ": " + pwd);
 		eleUtil.waitForElementVisible(email, constant.DEFAULT_ELEMENT_TIME_OUT).sendKeys(username);
 		eleUtil.doSendKeys(password, pwd);
 		eleUtil.doClick(Loginbutton);
@@ -88,7 +87,6 @@ public class LoginPage {
 
 	}
 
-	
 	public ProductInfoPage doLoginproductinfo(String username, String pwd) {
 		eleUtil.waitForElementVisible(email, constant.DEFAULT_ELEMENT_TIME_OUT).sendKeys(username);
 		eleUtil.doSendKeys(password, pwd);
