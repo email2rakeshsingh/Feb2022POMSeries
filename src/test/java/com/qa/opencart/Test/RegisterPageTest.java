@@ -21,7 +21,7 @@ public class RegisterPageTest extends BaseTest {
 	
 	public String getRandomEmailId() {
 		Random random= new Random();
-		String email= "email2Feb2022"+random.nextInt(2000)+"@gmail.com";
+		String email= "email2Feb2022"+random.nextInt(3000)+"@gmail.com";
 		return email;
 		
 	}
