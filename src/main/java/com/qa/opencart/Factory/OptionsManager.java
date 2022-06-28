@@ -23,6 +23,7 @@ public class OptionsManager {
 
 		if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 			co.setCapability("enableVNC", true);
+			co.setBrowserVersion(prop.getProperty("browserversion"));
 
 		}
 
@@ -35,6 +36,12 @@ public class OptionsManager {
 
 	public FirefoxOptions getFirefoxOption() {
 		fo = new FirefoxOptions();
+		if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+			fo.setCapability("enableVNC", true);
+			fo.setBrowserVersion(prop.getProperty("browserversion"));
+
+		}
+
 		if (Boolean.parseBoolean(prop.getProperty("headless")))
 			fo.setHeadless(true);
 		if (Boolean.parseBoolean(prop.getProperty("incognito")))

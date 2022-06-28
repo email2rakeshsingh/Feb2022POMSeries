@@ -5,31 +5,47 @@
 
 	<listeners>
 
-		<listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
+		<listener class-name="com.qa.opencart.listeners.ExtentReportListener" />
 		<listener class-name="com.qa.opencart.listeners.TestAllureListener" />
-		<listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>
+		<listener class-name="com.qa.opencart.listeners.AnnotationTransformer" />
 
 	</listeners>
 
-	<test name="Open Cart Login Page Test">
+	<test name="Open Cart Login Page Test_chrome_90">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="90.0" />
 		<classes>
 			<class name="com.qa.opencart.Test.LoginPageTest" />
 		</classes>
 	</test>
 
-	<test name="Open Cart Accounts Page Test">
+	<test name="Open Cart Login Page Test_chrome_100">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="100.0" />
+		<classes>
+			<class name="com.qa.opencart.Test.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Open Cart Accounts Page Test_chrome_100">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="100.0" />
 		<classes>
 			<class name="com.qa.opencart.Test.AccountPageTest" />
 		</classes>
 	</test>
 
-	<test name="Open Cart Product info Test">
+	<test name="Open Cart Product info Test_chrome 89">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="89.0" />
 		<classes>
 			<class name="com.qa.opencart.Test.ProductInfoTest" />
 		</classes>
 	</test>
 
-	<test name="Open Cart Register Page Negative Test">
+	<test name="Open Cart Register Page Negative Test_chrome 100">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="100.0" />
 		<classes>
 			<class name="com.qa.opencart.Test.RegisterPageTest" />
 		</classes>
