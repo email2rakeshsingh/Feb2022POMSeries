@@ -10,14 +10,12 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.Properties;
-
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -90,7 +88,7 @@ public class BaseTest {
 	public void sendTestReports() {
 
 		// Pass the name of the S3 bucket
-		String bucket_name = "nalreportbucket";
+		String bucket_name = "myprojectlistbucket";
 		// Location of the report file from the project structure
 		String file_path = "build/TestExecutionReport.html";
 		String key_name = Paths.get(file_path).getFileName().toString();
