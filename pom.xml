@@ -60,11 +60,13 @@
 			<artifactId>openxml4j</artifactId>
 			<version>1.0-beta</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>${extentreports-version}</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
@@ -90,7 +92,10 @@
 			<artifactId>aws-java-sdk-ses</artifactId>
 			<version>1.12.53</version>
 		</dependency>
+		
 	</dependencies>
+	
+	
 	<build>
 		<plugins>
 			<plugin>

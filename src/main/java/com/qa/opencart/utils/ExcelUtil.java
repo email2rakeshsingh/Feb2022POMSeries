@@ -3,8 +3,6 @@ package com.qa.opencart.utils;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Iterator;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -20,7 +18,6 @@ public class ExcelUtil {
 	public static Object[][] getTestData(String sheetName) {
 
 		Object data[][] = null;
-
 		try {
 			FileInputStream ip = new FileInputStream(TEST_DATA_SHEET_PATH);
 			try {
