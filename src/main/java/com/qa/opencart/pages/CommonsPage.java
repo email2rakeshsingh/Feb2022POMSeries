@@ -3,7 +3,6 @@ package com.qa.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.SendKeysAction;
 
 import com.qa.opencart.utils.ElementUtil;
 import com.qa.opencart.utils.constant;
